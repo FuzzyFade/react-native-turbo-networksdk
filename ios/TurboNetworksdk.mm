@@ -64,7 +64,6 @@ RCT_EXPORT_METHOD(updateConfig:(BOOL)enableHTTPCache quicPreHintHost:(NSArray *)
 + (NSURLSessionConfiguration *)sessionConfiguration {
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     [Cronet installIntoSessionConfiguration:configuration];
-    configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     [configuration setHTTPShouldSetCookies:YES];
     [configuration setHTTPCookieAcceptPolicy:NSHTTPCookieAcceptPolicyAlways];
     [configuration setHTTPCookieStorage:[NSHTTPCookieStorage sharedHTTPCookieStorage]];
