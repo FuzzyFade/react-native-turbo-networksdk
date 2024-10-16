@@ -24,6 +24,14 @@ const TurboNetworksdk = TurboNetworksdkModule
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return TurboNetworksdk.multiply(a, b);
+export function updateTurboNetworksConfiguration(
+  enableHTTPCache: boolean,
+  quicPreHintHost?: string[],
+  blackList?: string[]
+): Promise<number> {
+  return TurboNetworksdk.updateConfig(
+    enableHTTPCache,
+    quicPreHintHost,
+    blackList
+  );
 }

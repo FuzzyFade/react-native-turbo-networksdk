@@ -2,7 +2,11 @@ import type { TurboModule } from 'react-native';
 import { TurboModuleRegistry } from 'react-native';
 
 export interface Spec extends TurboModule {
-  multiply(a: number, b: number): Promise<number>;
+  updateConfig(
+    enableHTTPCache: boolean,
+    quicPreHintHost?: string[],
+    blackList?: string[]
+  ): Promise<number>;
 }
 
 export default TurboModuleRegistry.getEnforcing<Spec>('TurboNetworksdk');

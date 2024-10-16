@@ -1,12 +1,15 @@
 import { useState, useEffect } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-turbo-networksdk';
+import { updateTurboNetworksConfiguration } from 'react-native-turbo-networksdk';
 
 export default function App() {
   const [result, setResult] = useState<number | undefined>();
 
   useEffect(() => {
-    multiply(3, 7).then(setResult);
+    updateTurboNetworksConfiguration(true).then(
+      (response) => setResult(response),
+      (error) => console.error(error)
+    );
   }, []);
 
   return (

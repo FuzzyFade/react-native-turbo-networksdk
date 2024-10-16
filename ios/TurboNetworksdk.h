@@ -9,4 +9,7 @@
 @interface TurboNetworksdk : NSObject <RCTBridgeModule>
 #endif
 
+/// 对外暴露接口，初始化 `TurboNetworksdk` 模块
++ (void)setupNetworkSdk;
+
 @end
