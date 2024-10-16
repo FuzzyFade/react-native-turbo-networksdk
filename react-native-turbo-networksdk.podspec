@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/FuzzyFade/react-native-turbo-networksdk.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm,cpp}"
+  s.public_header_files = "ios/**/*.h"
 
   s.ios.vendored_frameworks = 'ios/Cronet.framework'
 
