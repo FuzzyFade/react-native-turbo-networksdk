@@ -1209,7 +1209,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - react-native-turbo-networksdk (0.1.0):
+  - react-native-turbo-networksdk (0.1.2):
     - DoubleConversion
     - glog
     - RCT-Folly (= 2024.01.01.00)
@@ -1488,7 +1488,6 @@ PODS:
     - React-ImageManager
     - React-jsi
     - React-NativeModulesApple
-    - React-RCTAppDelegate
     - React-RCTFabric
     - React-rendererdebug
     - React-utils
@@ -1532,7 +1531,6 @@ DEPENDENCIES:
   - React-idlecallbacksnativemodule (from `../node_modules/react-native/ReactCommon/react/nativemodule/idlecallbacks`)
   - React-ImageManager (from `../node_modules/react-native/ReactCommon/react/renderer/imagemanager/platform/ios`)
   - React-jsc (from `../node_modules/react-native/ReactCommon/jsc`)
-  - React-jsc/Fabric (from `../node_modules/react-native/ReactCommon/jsc`)
   - React-jserrorhandler (from `../node_modules/react-native/ReactCommon/jserrorhandler`)
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
@@ -1722,15 +1720,15 @@ SPEC CHECKSUMS:
   React-CoreModules: 9fac2d31803c0ed03e4ddaa17f1481714f8633a5
   React-cxxreact: c72a7a8066fc4323ea85a3137de50c8a10a69794
   React-debug: 3d21f69d8def0656f8b8ec25c0f05954f4d862c5
-  React-defaultsnativemodule: 95882787871a9e80337f464e4643f1c5e0a39198
-  React-domnativemodule: dc8aac826a90479ca4e05f096f1f8cd35c216f31
+  React-defaultsnativemodule: ca56510e8d1c07a48817b1423528c7464407ca45
+  React-domnativemodule: 5ef5656fda7dc3d35fdac312e06dec031481c183
   React-Fabric: 9347fa5c8fbfac6d5276dd9e52c91058467d0960
   React-FabricComponents: 68b9f8c4a7189c055a7eb67b182e8d98c4f75f47
   React-FabricImage: 062e20f8b360ca008f44d00a639951c8c37ba2aa
   React-featureflags: ee1abd6f71555604a36cda6476e3c502ca9a48e5
-  React-featureflagsnativemodule: 209f660bc398849cfb81712c93010276f25f337b
+  React-featureflagsnativemodule: 183b42cafab1e70a56b2608c26d04aff2bdf43d1
   React-graphics: d7dd9c8d75cad5af19e19911fa370f78f2febd96
-  React-idlecallbacksnativemodule: 17a0e379a7e3c9bc9653b6902f22f4208658d687
+  React-idlecallbacksnativemodule: 208b0d15e33c443607eccdc1fe3e081fe263a17f
   React-ImageManager: ab7a7d17dd0ff1ef1d4e1e88197d1119da9957ce
   React-jsc: 4d3352be620f3fe2272238298aaccc9323b01824
   React-jserrorhandler: d9e867bb83b868472f3f7601883f0403b3e3942d
@@ -1740,17 +1738,17 @@ SPEC CHECKSUMS:
   React-jsitracing: 0e8c0aadb1fcec6b1e4f2a66ee3b0da80f0f8615
   React-logger: d79b704bf215af194f5213a6b7deec50ba8e6a9b
   React-Mapbuffer: b982d5bba94a8bc073bda48f0d27c9b28417fae3
-  React-microtasksnativemodule: 8fa285fed833a04a754bf575f8ded65fc240b88d
-  react-native-turbo-networksdk: 4b38eeff6c6adb7e47c79c518cdc8626900a6c0e
+  React-microtasksnativemodule: 475ea38712131abd7f7935c82a41364cea2fa01f
+  react-native-turbo-networksdk: d8ac51c1465de81278ad68733c0e02654e9a437d
   React-nativeconfig: 8c83d992b9cc7d75b5abe262069eaeea4349f794
   React-NativeModulesApple: b8465afc883f5bf3fe8bac3767e394d581a5f123
   React-perflogger: 59e1a3182dca2cee7b9f1f7aab204018d46d1914
   React-performancetimeline: a9d05533ff834c6aa1f532e05e571f3fd2e3c1ed
   React-RCTActionSheet: d80e68d3baa163e4012a47c1f42ddd8bcd9672cc
   React-RCTAnimation: bde981f6bd7f8493696564da9b3bd05721d3b3cc
-  React-RCTAppDelegate: e5865dbf46ddec6d9ed9310a05094d13f9bb043f
+  React-RCTAppDelegate: bc9c02d6dd4d162e3e1850283aba81bd246fc688
   React-RCTBlob: e492d54533e61a81f2601494a6f393b3e15e33b9
-  React-RCTFabric: e6ef266a60e885a0548b0f7a5e9737f42ccd596b
+  React-RCTFabric: f2f86a175bb2fd3ce6760fd37338c6332efac2a6
   React-RCTImage: 90448d2882464af6015ed57c98f463f8748be465
   React-RCTLinking: 1bd95d0a704c271d21d758e0f0388cced768d77d
   React-RCTNetwork: 218af6e63eb9b47935cc5a775b7a1396cf10ff91
@@ -1767,7 +1765,7 @@ SPEC CHECKSUMS:
   React-utils: 546831c4f1be57fac614f68de34ac8763e67db55
   ReactCodegen: 5d297fcaf283fac32424f6bed10aa8d733fd2e5a
   ReactCommon: 8377a2a5504f72e284ce1b1cd207d8455bdbfdf3
-  ReactNativeHost: a3cd2bc15b6deac7439318607ce5637d8a93a117
+  ReactNativeHost: 99c0ffb175cd69de2ac9a70892cd22dac65ea79d
   ReactTestApp-DevSupport: cb1c13fd708e12d8cfe9a8adf4bab85519cec65d
   ReactTestApp-Resources: 7db90c026cccdf40cfa495705ad436ccc4d64154
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
