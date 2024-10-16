@@ -1,6 +1,6 @@
 {
   "name": "react-native-turbo-networksdk",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "a modern network client arch for react-native",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
